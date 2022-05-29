@@ -1,4 +1,4 @@
-# Crud with PHP and Mysql <img src='https://emojis.slackmojis.com/emojis/images/1643514056/130/php.png?1643514056' height='25'> <img src='https://emojis.slackmojis.com/emojis/images/1643514462/4439/mysql.png?1643514462' height='25'>
+# CRUD with PHP and MySQL <img src='https://emojis.slackmojis.com/emojis/images/1643514056/130/php.png?1643514056' height='25'> <img src='https://emojis.slackmojis.com/emojis/images/1643514462/4439/mysql.png?1643514462' height='25'>
 
 ## Table of Content
 
