@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +14,11 @@
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #353c42;">
-    <div class="container">
-      <a href="index.php">
-        <img src="cellphone.png" alt="" width="90px" height="90px">
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a href="index.php" class="navbar-brand">
-        <h2><strong>Cellphone Store</strong></h2>
-      </a>
-    </div>
+    <a href=".">
+      <img src="cellphone.png" alt="Logo" width="60">
+    </a>
+
+    <a href="." class="navbar-brand ml-3">
+      <h2>Cellphone Store</h2>
+    </a>
   </nav>

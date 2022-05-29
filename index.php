@@ -2,9 +2,9 @@
 
 <?php include("includes/header.php"); ?>
 
-<div class="container p-4">
+<div class="container-md p-2 p-md-4">
   <div class="row">
-    <div class="col-sm-7 col-md-4">
+    <div class="col-md-4">
       <?php if (isset($_SESSION['message'])) { ?>
         <div class="alert alert-<?= $_SESSION['message_type'] ?> alert-dismissible fade show" role="alert">
           <?= $_SESSION['message'] ?>
@@ -34,15 +34,15 @@
       </div>
     </div>
 
-    <div class="col-sm-5 col-md-8">
-      <table class="table table-bordered table-hover" style="text-align: center; width: 800px; ">
+    <div class="col-md-8 mt-5 mt-md-0">
+      <table class="table table-bordered table-hover table-responsive">
         <thead class="table-dark">
-          <tr>
+          <tr class="text-center">
             <th>Marca</th>
             <th>Modelo</th>
             <th>Caracteristicas</th>
             <th>Precio</th>
-            <th>Accion</th>
+            <th>Opciones</th>
           </tr>
         </thead>
         <tbody>
@@ -58,12 +58,14 @@
               <td><?php echo $row['precio'];
                   echo ('<strong>$</strong>') ?></td>
               <td>
-                <a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-warning btn-sm">
-                  <i class="fas fa-pen"></i>
-                </a>
-                <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-danger btn-sm">
-                  <i class="fas fa-trash"></i>
-                </a>
+                <div class="d-flex">
+                  <a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-warning btn-sm">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                  <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-danger btn-sm ml-2">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </div>
               </td>
             </tr>
           <?php } ?>

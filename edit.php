@@ -37,9 +37,9 @@ if (isset($_POST['actualizar'])) {
 
 <?php include("includes/header.php"); ?>
 
-<div class="container p-4">
+<div class="container-md p-4">
   <div class="row">
-    <div class="col-md-4 mx-auto">
+    <div class="col-md-6 mx-auto">
       <div class="card card-body">
         <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
           <div class="form-group">
@@ -54,7 +54,7 @@ if (isset($_POST['actualizar'])) {
           <div class="form-group">
             <input type="text" name="precio" value="<?php echo $precio ?>" class="form-control" placeholder="Actualizar precio">
           </div>
-          <button class="btn btn-warning btn-block" name="actualizar">
+          <button type="submit" class="btn btn-warning btn-block" name="actualizar">
             Actualizar
           </button>
         </form>
